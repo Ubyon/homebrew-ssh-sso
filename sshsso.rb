@@ -60,7 +60,7 @@ class GitHubPrivateRepositoryReleaseDownloadStrategy < GitHubPrivateRepositoryDo
     super
   end
   def parse_url_pattern
-    url_pattern = %r{https://github.com/([^/]+)/([^/]+)/releases/tags/([^/]+)/(\S+)}
+    url_pattern = %r{https://github.com/([^/]+)/([^/]+)/archive/refs/tags/([^/]+)/(\S+)}
     print @url
     print url_pattern
     unless @url =~ url_pattern
