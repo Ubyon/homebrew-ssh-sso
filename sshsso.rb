@@ -7,7 +7,6 @@ class Sshsso < Formula
   license "Ubyon Inc"
   depends_on "openssl"
   def install
-    system "./configure.sh"
     bin.install 'proxytunnel'
   end
 
