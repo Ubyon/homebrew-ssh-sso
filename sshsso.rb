@@ -3,7 +3,7 @@ class Sshsso < Formula
   homepage "https://github.com/Ubyon/ssh-sso"
   url "https://github.com/Ubyon/ssh-sso/archive/refs/tags/v0.0.2.tar.gz"
   version "0.0.2"
-  sha256 "f10b07890c3303226e1528b6a4c4183002e362e35c01affa1369a0d8b18096e5"
+  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   license "Ubyon Inc"
   depends_on "openssl"
   def install
