@@ -7,6 +7,7 @@ class Sshsso < Formula
   license "Ubyon Inc"
   depends_on "openssl"
   def install
+    bin.install 'learning-spring-javafx-0.0.1.jar' => "ssh-sso-helper"
     bin.install 'proxytunnel'
   end
 
