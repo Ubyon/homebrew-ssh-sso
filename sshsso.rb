@@ -63,9 +63,9 @@ class GitHubPrivateRepositoryReleaseDownloadStrategy < GitHubPrivateRepositoryDo
     url_pattern = %r{https://github.com/([^/]+)/([^/]+)/archive/refs/tags/([^/]+)/(\S+)}
     print @url
     print url_pattern
-    unless @url =~ url_pattern
-      raise CurlDownloadStrategyError, "Invalid url pattern for GitHub Release."
-    end
+    # unless @url =~ url_pattern
+    #   raise CurlDownloadStrategyError, "Invalid url pattern for GitHub Release."
+    # end
 
     _, @owner, @repo, @tag, @filename = *@url.match(url_pattern)
   end
