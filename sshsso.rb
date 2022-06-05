@@ -10,5 +10,4 @@ class Sshsso < Formula
     bin.install 'learning-spring-javafx-0.0.1.jar' => "ssh-sso-helper"
     bin.install 'proxytunnel'
   end
-
 end
