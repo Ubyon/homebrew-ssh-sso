@@ -1,0 +1,3 @@
+brew tap ubyon/ssh-sso
+export HOMEBREW_GITHUB_API_TOKEN=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
+brew install ubyon/ssh-sso/sshsso
