@@ -1,9 +1,9 @@
 class Sshsso < Formula
   desc "Sshsso"
   homepage "https://github.com/Ubyon/ssh-sso"
-  url "https://github.com/Ubyon/ssh-sso/archive/refs/tags/v0.0.6.tar.gz"
-  version "0.0.6"
-  sha256 "1ecd8ddb04a9d2c085d7c6bdfb206a1f341ceaf832bd6c47b818f283c5225a27"
+  url "https://github.com/Ubyon/ssh-sso/archive/refs/tags/v0.0.7.tar.gz"
+  version "0.0.7"
+  sha256 "22ef07762b8309daa415d5e570d1294bff3506f3d01dacdc28c3d3593e3b80fd"
   license "Ubyon Inc"
   depends_on "openssl"
   def install
@@ -17,7 +17,7 @@ class Sshsso < Formula
     2: Create ubyon ssh configuration file mkdir ~/.ssh/usc/config
     3: Update  ~/.ssh/config, echo 'Include usc/config' >> ~/.ssh/config
     4: ssh-sso-helper configuration file is stored at "/usr/local/Cellar/sshsso/<version>/libexec/application.yaml"
-    5: export SPRING_CONFIG_LOCATION=/usr/local/Cellar/sshsso/0.0.6/libexec/application.yaml
+    5: export SPRING_CONFIG_LOCATION=/usr/local/Cellar/sshsso/0.0.7/libexec/application.yaml
     
     Once everything is configured, typical use-case
     1: ssh login (Helps you with SSO and updates ~/.ssh/usc/config accordingly)
