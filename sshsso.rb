@@ -20,8 +20,7 @@ class Sshsso < Formula
     5: export SPRING_CONFIG_LOCATION=/usr/local/Cellar/sshsso/<version>/libexec/application.yaml
     
     Once everything is configured, typical use-case
-    1: ssh login (Helps you with SSO and updates ~/.ssh/usc/config accordingly)
-    2: ssh ubuntu@10.182.0.15 -p 9023
+    1: ssh ubuntu@10.182.0.15 -p 9023
   EOS
   end
 end
