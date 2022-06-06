@@ -10,8 +10,8 @@ class Sshsso < Formula
   depends_on :java => '1.8+'
   def install
     bin.install 'java-app-run'
-    libexec.install Dir['*']
-    bin.write_jar_script libexec/'ssh-sso-helper.jar', 'ssh-sso-helper'
+    # libexec.install Dir['*']
+    # bin.write_jar_script libexec/'ssh-sso-helper.jar', 'ssh-sso-helper'
     bin.install 'proxytunnel'
   end
 end
