@@ -17,7 +17,7 @@ class Sshsso < Formula
     2: Create ubyon ssh configuration file mkdir ~/.ssh/usc/config
     3: Update  ~/.ssh/config, echo 'Include usc/config' >> ~/.ssh/config
     4: ssh-sso-helper configuration file is stored at "/usr/local/Cellar/sshsso/<version>/libexec/application.yaml"
-    5: export SPRING_CONFIG_LOCATION=/usr/local/Cellar/sshsso/0.1.0/libexec/application.yaml
+    5: export SPRING_CONFIG_LOCATION=/usr/local/Cellar/sshsso/<version>/libexec/application.yaml
     
     Once everything is configured, typical use-case
     1: ssh login (Helps you with SSO and updates ~/.ssh/usc/config accordingly)
