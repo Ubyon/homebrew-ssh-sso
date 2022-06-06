@@ -1,9 +1,9 @@
 class Sshsso < Formula
   desc "Sshsso"
   homepage "https://github.com/Ubyon/ssh-sso"
-  url "https://github.com/Ubyon/ssh-sso/archive/refs/tags/v0.1.1.tar.gz"
-  version "0.1.1"
-  sha256 "8d16460c1639f79e099b9954b2fa8aed8b4da8bb6e0bb2ed33eef7313bc1fd3d"
+  url "https://github.com/Ubyon/ssh-sso/archive/refs/tags/v0.1.2.tar.gz"
+  version "0.1.2"
+  sha256 "5531b01e2ee6f13258d4c0c9eeb6855fce32140a8c07070fc1d484942370dc8f"
   license "Ubyon Inc"
   depends_on "openssl"
   def install
@@ -11,10 +11,10 @@ class Sshsso < Formula
     libexec.install Dir['*']
     bin.write_jar_script libexec/'ssh-sso-helper.jar', 'ssh-sso-helper'
     system "mkdir", "-p", "/tmp/ubyon"
-    system "cp", libexec/'helloworld.sh', "/tmp/ubyon"
+    system "cp", libexec/'post_install.sh', "/tmp/ubyon"
   end
   def post_install
-    system "/bin/sh", "/tmp/ubyon/helloworld.sh"
+    system "/bin/sh", "/tmp/ubyon/post_install.sh"
   end
 
   def caveats; <<~EOS
