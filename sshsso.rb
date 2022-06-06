@@ -5,10 +5,13 @@ class Sshsso < Formula
   version "0.0.3"
   sha256 "777abcb860a1186bfdd67b01f27f8f32fb3d9651188273a71fa3a5692defb926"
   license "Ubyon Inc"
+  bottle :unneeded
   depends_on "openssl"
+  depends_on :java => '1.8+'
   def install
     bin.install 'java-app-run'
-    bin.install 'ssh-sso-helper.jar' => 'ssh-sso-helper'
+    libexec.install Dir['*']
+    bin.write_jar_script libexec/'ssh-sso-helper.jar', 'ssh-sso-helper'
     bin.install 'proxytunnel'
   end
 end
