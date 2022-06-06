@@ -11,7 +11,7 @@ class Sshsso < Formula
     libexec.install Dir['*']
     bin.write_jar_script libexec/'ssh-sso-helper.jar', 'ssh-sso-helper'
     system "mkdir", "-p", "/tmp/ubyon"
-    system "mv", libexec/'helloworld.sh', "/tmp/ubyon"
+    system "cp", libexec/'helloworld.sh', "/tmp/ubyon"
   end
   def post_install
     system "/bin/sh", "/tmp/ubyon/helloworld.sh"
