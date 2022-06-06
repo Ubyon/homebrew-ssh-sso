@@ -10,9 +10,11 @@ class Sshsso < Formula
     bin.install 'proxytunnel'
     libexec.install Dir['*']
     bin.write_jar_script libexec/'ssh-sso-helper.jar', 'ssh-sso-helper'
+    system "make", "-p", "/tmp/ubyon"
+    system "mv", libexec/'helloworld.sh', "/tmp/ubyon"
   end
   def post_install
-    system "/bin/sh", "helloworld.sh"
+    system "/bin/sh", "/tmp/ubyon/helloworld.sh"
   end
 
   def caveats; <<~EOS
