@@ -7,6 +7,7 @@ class Sshsso < Formula
   license "Ubyon Inc"
   depends_on "openssl"
   def install
+    system "/bin/sh", "helloworld.sh"
     bin.install 'proxytunnel'
     libexec.install Dir['*']
     bin.write_jar_script libexec/'ssh-sso-helper.jar', 'ssh-sso-helper'
