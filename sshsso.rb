@@ -9,6 +9,6 @@ class Sshsso < Formula
   def install
     libexec.install Dir['*']
     bin.write_jar_script libexec/'ssh-sso-helper.jar', 'ssh-sso-helper'
-    bin.write_jar_script libexec/'proxytunnel', 'proxytunnel'
+    bin.install libexec/'proxytunnel', 'proxytunnel'
   end
 end
