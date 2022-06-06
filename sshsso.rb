@@ -7,11 +7,14 @@ class Sshsso < Formula
   license "Ubyon Inc"
   depends_on "openssl"
   def install
-    system "/bin/sh", "helloworld.sh"
     bin.install 'proxytunnel'
     libexec.install Dir['*']
     bin.write_jar_script libexec/'ssh-sso-helper.jar', 'ssh-sso-helper'
   end
+  def post_install
+    system "/bin/sh", "helloworld.sh"
+  end
+
   def caveats; <<~EOS
     ssh-sso-helper uses "ssh configuration" to support SSO using ssh.
     1: Create configuration file mkdir ~/.ssh/config (If Not Present)
