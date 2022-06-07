@@ -16,9 +16,9 @@ class Sshsso < Formula
     ssh-sso-helper uses "ssh configuration" to support SSO using ssh.
     1: export SSH_HOME=/Users/chintanvora/.ssh
     2: ssh-sso-helper configuration file is stored at "/usr/local/Cellar/sshsso/<version>/libexec/application.yaml"
-    2: export SPRING_CONFIG_LOCATION=/usr/local/Cellar/sshsso/<version>/libexec/application.yaml    
-    3: ssh-sso-helper (To create init configuration) 
-    4: ssh ubuntu@10.182.0.15
+    3: export SPRING_CONFIG_LOCATION=/usr/local/Cellar/sshsso/<version>/libexec/application.yaml    
+    4: ssh-sso-helper (To create init configuration) 
+    5: ssh ubuntu@10.182.0.15
   EOS
   end
 end
