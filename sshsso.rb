@@ -16,8 +16,8 @@ class Sshsso < Formula
     ssh-sso-helper uses "ssh configuration" to support SSO using ssh.
     1: export SSH_CONFIG_DIR=<SSH Configuration Directory of the user>. Make sure if has config file present
     2: export PROXY_URL=<Proxy URL>. Proxy/Edge url is the endpoint protecting resources using authentication/authorization.
-    3: ssh-sso-helper configuration file is stored at "/usr/local/Cellar/sshsso/<version>/libexec/application.yaml". Make sure server domains are appropriately defined.
-    4: export INIT_CONFIG=true for Initial Configuration 
+    3: export INIT_CONFIG=true for Initial Configuration 
+    4: ssh-sso-helper configuration file is stored at "/usr/local/Cellar/sshsso/<version>/libexec/application.yaml". Make sure server domains are appropriately defined.
     5: export SPRING_CONFIG_LOCATION=/usr/local/Cellar/sshsso/<version>/libexec/application.yaml     
     6: ssh-sso-helper (To create init configuration) 
     7: export INIT_CONFIG=false after initial configuration is done.
