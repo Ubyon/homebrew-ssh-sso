@@ -142,7 +142,7 @@ end
 
 
 
-class Sshsso < Formula
+class Privsshsso < Formula
   desc "privsshsso"
   homepage "https://github.com/Ubyon/ssh-sso"
   url "https://github.com/Ubyon/ssh-sso/releases/download/v0.2.4/v0.2.4.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
