@@ -18,7 +18,10 @@ class Sshsso < Formula
     2: export PROXY_URL=<Proxy URL>. Proxy/Edge url is the endpoint protecting resources using authentication/authorization.
     3: ubyonlogin configuration file is stored at "/usr/local/Cellar/sshsso/<version>/libexec/application.yaml". Make sure server domains are appropriately defined.
     4: export SPRING_CONFIG_LOCATION=/usr/local/Cellar/sshsso/<version>/libexec/application.yaml
-    5: Run ubyonlogin (To obtain valid token)
+    5: 
+      a: Run ubyonlogin (To obtain valid token using public native oidc web client - pkce supported )
+                                  OR
+      b: Run ubyonlogin --oidc=remote (To obtain valid token using private native oidc web client)
     6: ssh ubuntu@server.
   EOS
   end
